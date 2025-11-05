@@ -23,12 +23,7 @@ pkgmaker::source_files(paste(dir, "Codes", "fit_functions", sep = '/'),'*.R')
 manifest_name <- c('HM450.h19.manifest.txt', 'EPIC.hg38.manifest.txt')
 
 if(datatype %in% '450k'){
-  if(data == 'ROSMAP_450K'){
-    load(paste(dir, 'Data/450K', paste(data, 'RData', sep = '.'), sep = '/'))
-    bval_dat <- data$beta_vals
-  }else{
-    bval_dat <- data.frame(fread(paste(dir, "Data/450K", paste(data, 'csv', sep = '.'), sep = '/')), row.names = 1)
-  }
+  bval_dat <- data.frame(fread(paste(dir, "Data/450K", paste(data, 'csv', sep = '.'), sep = '/')), row.names = 1)
   manifest <- data.frame(fread(paste(dir, "Data", manifest_name[1], sep = '/')))
 }else{
   bval_dat <- data.frame(fread(paste(dir, "Data/EPIC", paste(data, 'csv', sep = '.'), sep = '/')), row.names = 1)
