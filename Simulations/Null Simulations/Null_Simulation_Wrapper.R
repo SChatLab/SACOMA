@@ -1,7 +1,7 @@
 #### Load packages ####
 
-packages <- c('pkgmaker', 'stringr', 'foreach', 'doParallel', 'data.table', 'comeback',
-              'coMethDMR', 'tidyverse', 'readr', 'ClustGeo', 'dendextend', 'SpaCCr',
+packages <- c('pkgmaker', 'stringr', 'foreach', 'doParallel', 'data.table',
+              'coMethDMR', 'tidyverse', 'readr', 'ClustGeo', 'dendextend',
               'doSNOW', 'gtools', 'dplyr', 'ChIPpeakAnno', 'pROC')
 for (i in packages){
   print(i)
