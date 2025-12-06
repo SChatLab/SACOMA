@@ -5,12 +5,12 @@
 Sacoma <- function(bval.dnam,
                    data_type = c("450k", "EPIC"),
                    manifest.dir,
-                   minCpGs,
+                   minCpGs = 3,
                    minCpGs.thres.type = c("equal", "gr.equal"),
-                   maxGap,
-                   rthresold, 
+                   maxGap = 200,
+                   rthresold = 0.5, 
                    method = c("spearman", "pearson"),
-                   ncores = 8){
+                   ncores = 1){
   
   #### Load the required manifest file based on data type ####
   
@@ -289,3 +289,4 @@ Sacoma <- function(bval.dnam,
   regions.all$peak.memory.gb <- peak.memory.gb
   return(regions.all)
 }
+
