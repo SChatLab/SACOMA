@@ -24,8 +24,8 @@ The main function used in this workflow can be found: **[SACOMA Function](https:
 To run SACOMA, you will also need array manifest files for the Infinium 450k or EPIC platforms.  
 These can be downloaded from following links:
 
-- **450k manifest:** <link-here>  
-- **EPIC manifest:** <link-here>  
+- **[450k manifest](https://indiana-my.sharepoint.com/:t:/g/personal/suvchat_iu_edu/EUDB4zlBM7NPt6BLLVwiq8sBuT1pdhKPcsWlXuD_-jNc2A?e=UlUx8U)**
+- **[EPIC manifest](https://indiana-my.sharepoint.com/:t:/g/personal/suvchat_iu_edu/EWOBny4uHHpDhef2_0OQcisBxvtm0kHPMBX9zzNK4Y-puQ?e=d4dJGZ)**  
 
 Download the files and point the `manifest.dir` argument to the folder where they are stored when running the function.
 
