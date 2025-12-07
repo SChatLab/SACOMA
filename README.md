@@ -150,7 +150,6 @@ res[res$prediction == 'signal',]
 All R scripts used for the simulation study and real-data analysis in the manuscript are available in this repository at the following locations:
 
 - **Simulation analysis scripts:** [Simulations](https://github.com/SChatLab/SACOMA/tree/main/Simulations)
-
 - **Real data analysis scripts:** [Real Data Analysis](https://github.com/SChatLab/SACOMA/tree/main/Real%20Data%20Analysis)
 
 The datasets used in the paper were obtained from GEO under the following accession IDs:
