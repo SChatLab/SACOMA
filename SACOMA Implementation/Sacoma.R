@@ -14,7 +14,7 @@ Sacoma <- function(bval.dnam,
   
   #### Load the required manifest file based on data type ####
   
-  if(datatype %in% '450k'){
+  if(data_type %in% '450k'){
     manifest <- data.frame(fread(paste(manifest.dir, 'HM450.h19.manifest.txt', sep = '/')))
   }else{
     manifest <- data.frame(fread(paste(manifest.dir, 'EPIC.hg38.manifest.txt', sep = '/')))
@@ -38,7 +38,7 @@ Sacoma <- function(bval.dnam,
   
   minCpgs.regions <- get.Genoregs(manifest, 
                                   maxGap = maxGap, 
-                                  minCpgs = minCpgs, 
+                                  minCpgs = minCpGs, 
                                   ceiling = minCpGs.thres.type, 
                                   intergenic = FALSE)
   
@@ -289,4 +289,5 @@ Sacoma <- function(bval.dnam,
   regions.all$peak.memory.gb <- peak.memory.gb
   return(regions.all)
 }
+
 
