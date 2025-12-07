@@ -91,7 +91,7 @@ load("~/SACOMA Implementation/Data/sample_data.RData")
 
 A typical DNA methylation beta value data frame looks something
 like below. Note, the CpGs should be in the rows and the samples in
-columns
+columns.
 
 ``` r
 beta_vals[1:5, 1:5]
@@ -106,7 +106,7 @@ beta_vals[1:5, 1:5]
 
 ### Identifying co-methylated regions using SACOMA
 
-To obtaine co-methylated regions using SACOMA please use the code below.
+To obtain co-methylated regions using SACOMA please use the code below.
 
 ``` r
 res <- Sacoma(bval.dnam = beta_vals,
@@ -120,7 +120,7 @@ res <- Sacoma(bval.dnam = beta_vals,
               ncores = 1)
 ```
 
-The results table from SACOMA should look something like the following
+The results table from SACOMA should look something like the following:
 
 ``` r
 res[1:5,]
@@ -133,7 +133,7 @@ res[1:5,]
     ##  4 cg01146320 chr11 120080945 637      noise      2    0.092      0.4654629
     ##  5 cg12526834 chr11 120081089 637      noise      2    0.092      0.4654629
 
-Filter the results table by prediction = 'signal' to obtain co-methylated regions
+Filter the results table by prediction = 'signal' to obtain co-methylated regions.
 
 ``` r
 res[res$prediction == 'signal',]
