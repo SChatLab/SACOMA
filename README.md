@@ -84,7 +84,7 @@ for (i in packages){
 Loading a sample data
 
 ``` r
-load("~/Current Data Path/sample_data.RData") 
+load("~/SACOMA Implementation/Data/sample_data.RData") 
 ```
 
 ### Snapshot of data
