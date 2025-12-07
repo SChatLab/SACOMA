@@ -64,6 +64,21 @@ Download the files and point the `manifest.dir` argument to the folder where the
 | Time.min | Total runtime (in minutes) for the Sacoma pipeline.|
 | peak.memory.gb | 	Peak memory usage (in gigabytes) recorded during processing.|
 
+## Analysis Scripts and Data Availability
+
+All R scripts used for the simulation study and real-data analysis in the manuscript are available in this repository at the following locations:
+
+- **Simulation analysis scripts:** [Simulations](https://github.com/SChatLab/SACOMA/tree/main/Simulations)
+
+- **Real data analysis scripts:** [Real Data Analysis](https://github.com/SChatLab/SACOMA/tree/main/Real%20Data%20Analysis)
+
+The datasets used in the paper were obtained from GEO under the following accession IDs:
+
+- **450k dataset:** GSE281199
+- **EPIC dataset:** GSE169338
+
+After downloading, place the data files in a preferred directory and update the paths inside the analysis scripts accordingly.
+
 # Citation
 
 Meshram, S., Fadikar, A., Arunkumar, G., & Chatterjee, S. (2025). A spatially-aware unsupervised pipeline to identify co-methylation regions in DNA methylation data. bioRxiv, 2025-11.
